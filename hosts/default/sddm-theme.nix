@@ -1,12 +1,12 @@
-{ pkgs }:
+{ pkgs, ... }:
 
 pkgs.stdenv.mkDerivation {
-  name = "sddm-theme";
+  name = "rose-pine";
   src = pkgs.fetchFromGitHub {
     owner = "lwndhrst";
     repo = "sddm-rose-pine";
-    rev = "e8735051bf4a418efaf076f52cb3d7873ccd1509";
-    sha256 = "lvdmxjkacv5il8gpdxgw7zbmy442b9wrv47az3yw1wwwd8wr6pzl";
+    rev = "v1.2";
+    sha256 = "+WOdazvkzpOKcoayk36VLq/6lLOHDWkDykDsy8p87JE=";
   };
   installPhase = ''
     mkdir -p $out

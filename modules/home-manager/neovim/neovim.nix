@@ -1,18 +1,5 @@
 { config, pkgs, inputs, ... }:
-{
-  nixpkgs = {
-    overlays = [
-      (final: prev: {
-        vimPlugins = prev.vimPlugins // {
-          own-rosepine-nvim = prev.vimUtils.buildVimPlugin {
-            name = "rose-pine";
-            src = inputs.plugin-rosepine;
-          };
-        };
-      })
-    ];
-  };
-
+{ 
   home.sessionVariables = {
     EDITOR = "nvim";
     VISUAL = "nvim";
@@ -62,7 +49,7 @@
       }
 
       {
-        plugin = pkgs.vimPlugins.own-rosepine-nvim;
+        plugin = rose-pine;
         config = "colorscheme rose-pine-moon";
       }
 
@@ -79,8 +66,7 @@
         config = toLuaFile ./plugin/telescope.lua;
       }
 
-      telescope-fzf-native-nvim
-      LazyVim
+      telescope-fzf-native-nvim 
 
       cmp_luasnip
       cmp-nvim-lsp

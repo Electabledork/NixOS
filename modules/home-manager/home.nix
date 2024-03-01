@@ -27,9 +27,21 @@ in
       package = pkgs.rose-pine-icon-theme;
       name = "rose-pine-moon";
     };
+
+    cursorTheme = {
+      package = pkgs.simp1e-cursors;
+      name = "Simp1e Rose Pine Moon";
+    };
   };
 
-  qt.enable = true;
+  qt = {
+    enable = true;
+    platformTheme = "gtk";
+  };
+
+  home.pointerCursor.gtk.enable = true;
+  home.pointerCursor.package = pkgs.simp1e-cursors;
+  home.pointerCursor.name = "Simp1e Rose Pine Moon";
 
   nixpkgs.config.allowUnfree = true;
   nix = {
@@ -46,7 +58,8 @@ in
       NIXPKGS_ALLOW_UNFREE = "1";
       GTK_THEME = "rose-pine-moon";
     };
-  }; 
+  };
+
 
   programs.home-manager.enable = true;
   home.stateVersion = "23.11";

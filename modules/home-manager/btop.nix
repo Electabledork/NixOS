@@ -9,4 +9,6 @@
     terminal = false;
     mimeType = [ "text/plain" ];
   };
+
+  programs.btop.enable = true;
 }

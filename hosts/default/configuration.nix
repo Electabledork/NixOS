@@ -70,18 +70,22 @@
     home-manager
     git
     wget
+    libsForQt5.qt5.qtgraphicaleffects
+    ffmpegthumbnailer
   ];
 
 
   # Programs to enable
   programs = {
     fish.enable = true;
-    thunar.enable = true;
+    thunar.enable = true;  
     streamdeck-ui = {
       enable = true;
       autoStart = true; # optional
     };
   };
+
+  services.tumbler.enable = true;
 
   # Fonts
   fonts.packages = with pkgs; [

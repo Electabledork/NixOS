@@ -179,30 +179,13 @@
         "type": "github"
       }
     },
-    "plugin-rosepine": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1707926298,
-        "narHash": "sha256-Zukzbs5ZQUjWutZK0oc1VHqFmUbvzWKtu6hb9EDFl9Y=",
-        "owner": "rose-pine",
-        "repo": "neovim",
-        "rev": "f977eeba34b030b37f93ece2fbd792477606203b",
-        "type": "github"
-      },
-      "original": {
-        "owner": "rose-pine",
-        "repo": "neovim",
-        "type": "github"
-      }
-    },
     "root": {
       "inputs": {
         "ags": "ags",
         "home-manager": "home-manager",
         "hyprland": "hyprland",
         "hyprland-plugins": "hyprland-plugins",
-        "nixpkgs": "nixpkgs_3",
-        "plugin-rosepine": "plugin-rosepine"
+        "nixpkgs": "nixpkgs_3"
       }
     },
     "systems": {

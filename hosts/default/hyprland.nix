@@ -20,11 +20,6 @@
     pam.services.ags = {};
   };
 
-  environment.systemPackages = with pkgs; [
-   #rose-pine-gtk-theme
-   #rose-pine-icon-theme
-  ];
-  
   services = {
     udisks2.enable = true; 
     xserver = {
@@ -32,11 +27,14 @@
       displayManager.startx.enable = true;
       displayManager.sddm = {
         enable = true;
+        wayland.enable = true;
+        theme = "${ import ./sddm-theme.nix { inherit pkgs; }}";
       };
       displayManager.setupCommands = ''
-        xrandr --output DP-1 --primary --mode 1920x1080 --rate 75.00
-	--output DP-2 --mode 1920x1080 --rate 75.00 --rotate right --left-of DP-1
-	--output HDMI-A-1 --mode 1920x1080 --rate 60.00 --right-of DP-1
+        LEFT='DP-2'
+        CENTER='DP-1'
+        RIGHT='HDMI-A-1'
+        ${pkgs.xorg.xrandr}/bin/xrandr --output $CENTER --primary --output $LEFT --rotate right --left-of $CENTER --output $RIGHT --right-of $CENTER
       '';
     };
   };

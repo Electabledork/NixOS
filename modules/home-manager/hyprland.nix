@@ -1,4 +1,8 @@
 { pkgs, lib, config, inputs, ... }:
+let
+  playerctl = "${pkgs.playerctl}/bin/playerctl";
+  pactl = "${pkgs.pulseaudio}/bin/pactl";
+in 
 {
   wayland.windowManager.hyprland = {
     enable = true;
@@ -12,6 +16,9 @@
 
       exec-once = [
         "discord"
+        "udiskie -t --appindicator &"
+        "streamdeck &"
+        "qsynth &"
       ];
 
       monitor = [
@@ -96,32 +103,33 @@
       windowrule = [];
 
       "$mod" = "SUPER";
+
       bind = [
         "$mod, T, exec, $terminal"
         "$mod, Q, killactive,"
-	"$mod, M, exit,"
-	"$mod, E, exec, $terminal -e $fileManager"
-	"$mod, V, togglefloating,"
-	"$mod, R, exec, $menu"
-	"$mod, P, pseudo,,"
-	"$mod, J, togglesplit, "
-	"$mod, B, exec, firefox"
-	"$mod, left, movefocus, l"
-	"$mod, right, movefocus, r"
-	"$mod, up, movefocus, u"
-	"$mod, down, movefocus, d"	
-	"$mod, S, togglespecialworkspace, magic"
-	"$mod SHIFT, S, movetoworkspace, special:magicv"
-	"$mod, mouse_down, workspace, e+1"
-	"$mod, mouse_up, workspace, e-1"
+	    "$mod, M, exit,"
+	    "$mod, E, exec, $terminal -e $fileManager"
+	    "$mod, V, togglefloating,"
+	    "$mod, R, exec, $menu"
+	    "$mod, P, pseudo,,"
+    	"$mod, J, togglesplit, "
+    	"$mod, B, exec, firefox"
+    	"$mod, left, movefocus, l"
+    	"$mod, right, movefocus, r"
+    	"$mod, up, movefocus, u"
+    	"$mod, down, movefocus, d"	
+    	"$mod, S, togglespecialworkspace, magic"
+    	"$mod SHIFT, S, movetoworkspace, special:magicv"
+    	"$mod, mouse_down, workspace, e+1"
+    	"$mod, mouse_up, workspace, e-1"
       ]
       ++ (
         # workspaces
         # binds $mod + [shift +] {1..10} to [move to] workspace {1..10}
         builtins.concatLists (builtins.genList (
-            x: let
-              ws = let
-                c = (x + 1) / 10;
+          x: let
+            ws = let
+              c = (x + 1) / 10;
               in
                 builtins.toString (x + 1 - (c * 10));
             in [
@@ -133,10 +141,24 @@
       );
 
       bindm = [
-	"$mod, mouse:272, movewindow"
-	"$mod, mouse:273, resizewindow"
+	    "$mod, mouse:272, movewindow"
+	    "$mod, mouse:273, resizewindow"
       ];
 
+
+      bindle = [
+        ",XF86AudioRaiseVolume,  exec, ${pactl} set-sink-volume @DEFAULT_SINK@ +5%"
+        ",XF86AudioLowerVolume,  exec, ${pactl} set-sink-volume @DEFAULT_SINK@ -5%"
+      ];
+
+      bindl =  [
+        ",XF86AudioPlay,    exec, ${playerctl} play-pause"
+        ",XF86AudioStop,    exec, ${playerctl} pause"
+        ",XF86AudioPause,   exec, ${playerctl} pause"
+        ",XF86AudioPrev,    exec, ${playerctl} previous"
+        ",XF86AudioNext,    exec, ${playerctl} next"
+        ",XF86AudioMicMute, exec, ${pactl} set-source-mute @DEFAULT_SOURCE@ toggle"
+      ];
     };
 
   };

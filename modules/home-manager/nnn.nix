@@ -10,7 +10,5 @@
     mimeType = [ "text/plain" ];
   };
 
-  programs.nnn = {
-    enable = true;
-  };
+  programs.nnn.enable = true;
 }

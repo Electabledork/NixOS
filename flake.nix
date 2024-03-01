@@ -17,9 +17,6 @@
     };
 
     ags.url = "github:Aylur/ags";
-
-    plugin-rosepine.url = "github:rose-pine/neovim";
-    plugin-rosepine.flake = false;
   };
 
   outputs = { self, nixpkgs, home-manager, ... }@inputs:
