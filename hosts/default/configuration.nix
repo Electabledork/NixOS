@@ -1,4 +1,4 @@
-{ config, pkgs, inputs, ... }:
+{ config, pkgs, stablepkgs, inputs, ... }:
 {
   imports =[ 
     ./hardware-configuration.nix
@@ -9,7 +9,12 @@
   ];
 
   documentation.nixos.enable = false; # .desktop
-  nixpkgs.config.allowUnfree = true;
+  nixpkgs.config = {
+    allowUnfree = true;
+    permittedInsecurePackages = [
+      "electron-25.9.0"
+    ];
+  };
   nix = {
     settings = {
       experimental-features = "nix-command flakes";
@@ -60,18 +65,18 @@
     isNormalUser = true;
     description = "Paul Roberts";
     extraGroups = [ "networkmanager" "wheel" ];
-    packages = with pkgs; [ ];
+    packages =[ ];
     shell = pkgs.fish;
   };
 
 
   # System packages
-  environment.systemPackages = with pkgs; [
-    home-manager
-    git
-    wget
-    libsForQt5.qt5.qtgraphicaleffects
-    ffmpegthumbnailer
+  environment.systemPackages = [
+    pkgs.home-manager
+    pkgs.git
+    pkgs.wget
+    pkgs.libsForQt5.qt5.qtgraphicaleffects
+    pkgs.ffmpegthumbnailer
   ];
 
 

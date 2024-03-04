@@ -11,7 +11,7 @@ in
     settings = {
       "$terminal" = "kitty";
       "$fileManager" = "nnn";
-      "$menu" = "rofi -show drun";
+      "$menu" = "rofi -show drun -show-icons";
       "source" = "~/.config/hypr/rose-pine-moon.conf";
 
       exec-once = [

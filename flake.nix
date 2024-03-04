@@ -22,10 +22,12 @@
   outputs = { self, nixpkgs, home-manager, ... }@inputs:
   let
     system = "x86_64-linux";
-    #pkgs = nixpkgs.legacyPackages.${system};
     pkgs = import nixpkgs {
       inherit system;
       config.allowUnfree = true;
+      config.permittedInsecurePackages = [
+        "electron-25.9.0"
+      ];
     };
     username = "paulr";
   in
@@ -34,7 +36,7 @@
       specialArgs = { inherit inputs; };
       modules = [ 
         ./hosts/default/configuration.nix
-	inputs.home-manager.nixosModules.default
+	      inputs.home-manager.nixosModules.default
       ];
     };
   };

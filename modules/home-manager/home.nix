@@ -43,7 +43,13 @@ in
   home.pointerCursor.package = pkgs.simp1e-cursors;
   home.pointerCursor.name = "Simp1e Rose Pine Moon";
 
-  nixpkgs.config.allowUnfree = true;
+  nixpkgs.config = {
+    allowUnfree = true;
+    permittedInsecurePackages = [
+      "electron-25.9.0"
+    ];
+  };
+
   nix = {
     settings = {
       experimental-features = [ "nix-command" "flakes" ];

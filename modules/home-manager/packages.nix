@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ pkgs, stablepkgs, inputs, ... }:
 {
   home.packages = with pkgs; with nodePackages_latest; with jetbrains; [
     # Hyprland / System
@@ -27,8 +27,8 @@
     betterdiscordctl
     starship
     f1viewer
-    #cava
     multiviewer-for-f1
+    obs-studio
 
 
     # Art
@@ -38,13 +38,22 @@
     inkscape
     aseprite
     ldtk
-    #blockbench-electron
+    tiled
+    blockbench-electron
 
 
     # GameDev
     godot_4
     raylib
     ogre
+    love
+    sfml
+    SDL2
+    SDL2_ttf
+    SDL2_net
+    SDL2_sound
+    SDL2_mixer
+    SDL2_image
 
 
     # Programming
@@ -70,6 +79,7 @@
     gnumake
     cmake
     hashlink
+    flutter
 
 
     # Music Synth / Daws
@@ -77,17 +87,22 @@
     lmms
     ardour
     reaper
+    hydrogen
 
 
     # Image Edit
+    rawtherapee
+    darktable
 
 
     # Video Edit
-
+    davinci-resolve
     
     # Office / Notes
     onlyoffice-bin
     obsidian
+    rnote
+    xournalpp
 
     # Libs / Tools
     unzip
