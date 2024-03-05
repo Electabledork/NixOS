@@ -110,6 +110,7 @@
     defaultApplications = {
       "image/png" = "qview.desktop";
       "image/jpeg" = "qview.desktop";
+      "image/*" = "qview.desktop";
       "video/MP2T" = "mpv.desktop";
     };
   };

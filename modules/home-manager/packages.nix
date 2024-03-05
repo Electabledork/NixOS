@@ -16,7 +16,6 @@
     swww
     easyeffects
 
-
     # General Programs
     mpv
     youtube-music
@@ -27,7 +26,6 @@
     betterdiscordctl
     starship
     f1viewer
-    multiviewer-for-f1
     obs-studio
 
 

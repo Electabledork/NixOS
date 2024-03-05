@@ -1,0 +1,356 @@
+{
+    "streamdeck_ui_version": 1,
+    "state": {
+        "DL19L2A83026": {
+            "buttons": {
+                "0": {
+                    "0": {
+                        "command": "youtube-music",
+                        "icon": "/nix/store/08k62y0ajf9smrvf700ya1ym6ss6km8c-rose-pine-icon-theme-unstable-2022-09-01/share/icons/rose-pine-moon/128x128/apps/youtube-music.svg",
+                        "text_vertical_align": "middle-top",
+                        "text_horizontal_align": "right"
+                    },
+                    "1": {
+                        "command": "kitty -e f1viewer",
+                        "icon": "/nix/store/08k62y0ajf9smrvf700ya1ym6ss6km8c-rose-pine-icon-theme-unstable-2022-09-01/share/icons/rose-pine-moon/128x128/apps/f1-2015.svg"
+                    },
+                    "2": {
+                        "command": "easyeffects",
+                        "icon": "/nix/store/08k62y0ajf9smrvf700ya1ym6ss6km8c-rose-pine-icon-theme-unstable-2022-09-01/share/icons/rose-pine-moon/128x128/apps/easyeffects.svg"
+                    },
+                    "3": {
+                        "switch_page": 0,
+                        "icon": ""
+                    },
+                    "4": {
+                        "command": "kitty -e btop",
+                        "icon": "/nix/store/s3pz4vmlbh0cdajwv4c3kbd6gspgxq9h-btop-1.3.2/share/icons/hicolor/scalable/apps/btop.svg"
+                    },
+                    "5": {
+                        "command": "obsidian",
+                        "icon": "/nix/store/08k62y0ajf9smrvf700ya1ym6ss6km8c-rose-pine-icon-theme-unstable-2022-09-01/share/icons/rose-pine-moon/128x128/apps/obsidian.svg"
+                    },
+                    "6": {
+                        "command": "xournalpp",
+                        "icon": "/nix/store/08k62y0ajf9smrvf700ya1ym6ss6km8c-rose-pine-icon-theme-unstable-2022-09-01/share/icons/rose-pine-moon/128x128/apps/xournalpp.svg"
+                    },
+                    "7": {
+                        "command": "rnote",
+                        "icon": "/nix/store/m3nxakszpqzg16bcnxirll8gbpgynp75-rnote-0.9.4/share/icons/hicolor/scalable/apps/com.github.flxzt.rnote.svg"
+                    },
+                    "8": {
+                        "command": "onlyoffice-desktopeditors",
+                        "icon": "/nix/store/08k62y0ajf9smrvf700ya1ym6ss6km8c-rose-pine-icon-theme-unstable-2022-09-01/share/icons/rose-pine-moon/128x128/apps/onlyoffice-desktopeditors.svg"
+                    },
+                    "9": {
+                        "command": "thunar",
+                        "icon": "/nix/store/08k62y0ajf9smrvf700ya1ym6ss6km8c-rose-pine-icon-theme-unstable-2022-09-01/share/icons/rose-pine-moon/128x128/apps/thunar.svg"
+                    },
+                    "10": {
+                        "write": "",
+                        "text": "",
+                        "text_vertical_align": "top",
+                        "switch_page": 2,
+                        "icon": "/nix/store/08k62y0ajf9smrvf700ya1ym6ss6km8c-rose-pine-icon-theme-unstable-2022-09-01/share/icons/rose-pine-moon/128x128/places/folder-code.svg"
+                    },
+                    "11": {
+                        "text": "",
+                        "text_vertical_align": "top",
+                        "switch_page": 3,
+                        "icon": "/nix/store/08k62y0ajf9smrvf700ya1ym6ss6km8c-rose-pine-icon-theme-unstable-2022-09-01/share/icons/rose-pine-moon/128x128/places/folder-games.svg"
+                    },
+                    "12": {
+                        "write": "",
+                        "text": "",
+                        "text_vertical_align": "top",
+                        "switch_page": 4,
+                        "icon": "/home/paulr/.local/share/icons/folder_art.svg"
+                    },
+                    "13": {
+                        "text": "",
+                        "text_vertical_align": "top",
+                        "switch_page": 5,
+                        "icon": "/nix/store/08k62y0ajf9smrvf700ya1ym6ss6km8c-rose-pine-icon-theme-unstable-2022-09-01/share/icons/rose-pine-moon/128x128/places/folder-music.svg"
+                    },
+                    "14": {
+                        "command": "",
+                        "text": "",
+                        "text_vertical_align": "top",
+                        "switch_page": 6,
+                        "icon": "/nix/store/08k62y0ajf9smrvf700ya1ym6ss6km8c-rose-pine-icon-theme-unstable-2022-09-01/share/icons/rose-pine-moon/128x128/places/folder-videocamera.svg"
+                    }
+                },
+                "1": {
+                    "0": {
+                        "command": "rider",
+                        "text": "",
+                        "icon": "/nix/store/08k62y0ajf9smrvf700ya1ym6ss6km8c-rose-pine-icon-theme-unstable-2022-09-01/share/icons/rose-pine-moon/128x128/apps/rider.svg"
+                    },
+                    "1": {
+                        "command": "idea-ultimate",
+                        "text": "",
+                        "icon": "/nix/store/08k62y0ajf9smrvf700ya1ym6ss6km8c-rose-pine-icon-theme-unstable-2022-09-01/share/icons/rose-pine-moon/128x128/apps/idea-ultimate.svg"
+                    },
+                    "2": {
+                        "text": "",
+                        "command": "clion",
+                        "icon": "/nix/store/08k62y0ajf9smrvf700ya1ym6ss6km8c-rose-pine-icon-theme-unstable-2022-09-01/share/icons/rose-pine-moon/128x128/apps/clion.svg"
+                    },
+                    "3": {
+                        "text": "",
+                        "command": "rust-rover",
+                        "icon": "/home/paulr/.local/share/icons/rustrover.svg"
+                    },
+                    "4": {
+                        "text": "",
+                        "command": "webstorm",
+                        "icon": "/nix/store/08k62y0ajf9smrvf700ya1ym6ss6km8c-rose-pine-icon-theme-unstable-2022-09-01/share/icons/rose-pine-moon/128x128/apps/webstorm.svg"
+                    },
+                    "5": {
+                        "text": "",
+                        "command": "phpstorm",
+                        "icon": "/nix/store/08k62y0ajf9smrvf700ya1ym6ss6km8c-rose-pine-icon-theme-unstable-2022-09-01/share/icons/rose-pine-moon/128x128/apps/phpstorm.svg"
+                    },
+                    "6": {
+                        "text": "",
+                        "command": "pycharm-professional",
+                        "icon": "/nix/store/08k62y0ajf9smrvf700ya1ym6ss6km8c-rose-pine-icon-theme-unstable-2022-09-01/share/icons/rose-pine-moon/128x128/apps/pycharm-professional.svg"
+                    },
+                    "7": {
+                        "text": "",
+                        "command": "codium",
+                        "icon": "/nix/store/08k62y0ajf9smrvf700ya1ym6ss6km8c-rose-pine-icon-theme-unstable-2022-09-01/share/icons/rose-pine-moon/128x128/apps/vscodium.svg"
+                    },
+                    "8": {},
+                    "9": {},
+                    "10": {
+                        "icon": "/nix/store/08k62y0ajf9smrvf700ya1ym6ss6km8c-rose-pine-icon-theme-unstable-2022-09-01/share/icons/rose-pine-moon/16x16@2x/actions/back.svg",
+                        "switch_page": 1
+                    },
+                    "11": {},
+                    "12": {},
+                    "13": {},
+                    "14": {}
+                },
+                "2": {
+                    "0": {
+                        "command": "godot4",
+                        "icon": "/nix/store/08k62y0ajf9smrvf700ya1ym6ss6km8c-rose-pine-icon-theme-unstable-2022-09-01/share/icons/rose-pine-moon/128x128/apps/godot.svg"
+                    },
+                    "1": {},
+                    "2": {},
+                    "3": {},
+                    "4": {},
+                    "5": {},
+                    "6": {},
+                    "7": {},
+                    "8": {},
+                    "9": {},
+                    "10": {
+                        "switch_page": 1,
+                        "icon": "/nix/store/08k62y0ajf9smrvf700ya1ym6ss6km8c-rose-pine-icon-theme-unstable-2022-09-01/share/icons/rose-pine-moon/16x16@2x/actions/back.svg"
+                    },
+                    "11": {},
+                    "12": {},
+                    "13": {},
+                    "14": {}
+                },
+                "3": {
+                    "0": {
+                        "text": "",
+                        "command": "aseprite",
+                        "icon": "/nix/store/08k62y0ajf9smrvf700ya1ym6ss6km8c-rose-pine-icon-theme-unstable-2022-09-01/share/icons/rose-pine-moon/128x128/apps/aseprite.svg"
+                    },
+                    "1": {
+                        "text": "",
+                        "command": "krita",
+                        "icon": "/nix/store/08k62y0ajf9smrvf700ya1ym6ss6km8c-rose-pine-icon-theme-unstable-2022-09-01/share/icons/rose-pine-moon/128x128/apps/krita.svg"
+                    },
+                    "2": {
+                        "text": "",
+                        "command": "gimp",
+                        "icon": "/nix/store/08k62y0ajf9smrvf700ya1ym6ss6km8c-rose-pine-icon-theme-unstable-2022-09-01/share/icons/rose-pine-moon/128x128/apps/gimp.svg"
+                    },
+                    "3": {
+                        "text": "",
+                        "command": "inkscape",
+                        "icon": "/nix/store/08k62y0ajf9smrvf700ya1ym6ss6km8c-rose-pine-icon-theme-unstable-2022-09-01/share/icons/rose-pine-moon/128x128/apps/inkscape-logo.svg"
+                    },
+                    "4": {},
+                    "5": {
+                        "text": "block",
+                        "icon": "/nix/store/08k62y0ajf9smrvf700ya1ym6ss6km8c-rose-pine-icon-theme-unstable-2022-09-01/share/icons/rose-pine-moon/128x128/apps/blockbench.svg"
+                    },
+                    "6": {
+                        "command": "kitty -e nix-shell -p blender",
+                        "icon": "/nix/store/08k62y0ajf9smrvf700ya1ym6ss6km8c-rose-pine-icon-theme-unstable-2022-09-01/share/icons/rose-pine-moon/128x128/apps/blender.svg"
+                    },
+                    "7": {},
+                    "8": {
+                        "text": "",
+                        "command": "ldtk",
+                        "icon": "/nix/store/r35y25fhwdsb3c6r6z061rz656paaqm4-ldtk-1.5.3/share/icons/hicolor/1024x1024/apps/ldtk.png"
+                    },
+                    "9": {
+                        "text": "",
+                        "command": "tiled",
+                        "icon": "/nix/store/08k62y0ajf9smrvf700ya1ym6ss6km8c-rose-pine-icon-theme-unstable-2022-09-01/share/icons/rose-pine-moon/128x128/apps/tiled.svg"
+                    },
+                    "10": {
+                        "switch_page": 1,
+                        "icon": "/nix/store/08k62y0ajf9smrvf700ya1ym6ss6km8c-rose-pine-icon-theme-unstable-2022-09-01/share/icons/rose-pine-moon/16x16@2x/actions/back.svg"
+                    },
+                    "11": {},
+                    "12": {},
+                    "13": {
+                        "command": "darktable",
+                        "icon": "/nix/store/08k62y0ajf9smrvf700ya1ym6ss6km8c-rose-pine-icon-theme-unstable-2022-09-01/share/icons/rose-pine-moon/128x128/apps/darktable.svg"
+                    },
+                    "14": {
+                        "command": "rawtherapee",
+                        "icon": "/nix/store/08k62y0ajf9smrvf700ya1ym6ss6km8c-rose-pine-icon-theme-unstable-2022-09-01/share/icons/rose-pine-moon/128x128/apps/rawtherapee.svg"
+                    }
+                },
+                "4": {
+                    "0": {
+                        "command": "reaper",
+                        "icon": "/nix/store/08k62y0ajf9smrvf700ya1ym6ss6km8c-rose-pine-icon-theme-unstable-2022-09-01/share/icons/rose-pine-moon/128x128/apps/cockos-reaper.svg"
+                    },
+                    "1": {
+                        "command": "lmms",
+                        "icon": "/nix/store/08k62y0ajf9smrvf700ya1ym6ss6km8c-rose-pine-icon-theme-unstable-2022-09-01/share/icons/rose-pine-moon/128x128/apps/lmms.svg"
+                    },
+                    "2": {
+                        "command": "ardour8",
+                        "icon": "/nix/store/08k62y0ajf9smrvf700ya1ym6ss6km8c-rose-pine-icon-theme-unstable-2022-09-01/share/icons/rose-pine-moon/128x128/apps/ardour6.svg"
+                    },
+                    "3": {
+                        "command": "hydrogen",
+                        "icon": "/nix/store/08k62y0ajf9smrvf700ya1ym6ss6km8c-rose-pine-icon-theme-unstable-2022-09-01/share/icons/rose-pine-moon/128x128/apps/hydrogen.svg"
+                    },
+                    "4": {},
+                    "5": {},
+                    "6": {},
+                    "7": {},
+                    "8": {},
+                    "9": {},
+                    "10": {
+                        "icon": "/nix/store/08k62y0ajf9smrvf700ya1ym6ss6km8c-rose-pine-icon-theme-unstable-2022-09-01/share/icons/rose-pine-moon/16x16@2x/actions/back.svg",
+                        "switch_page": 1
+                    },
+                    "11": {},
+                    "12": {},
+                    "13": {},
+                    "14": {
+                        "command": "qsynth",
+                        "icon": "/nix/store/08k62y0ajf9smrvf700ya1ym6ss6km8c-rose-pine-icon-theme-unstable-2022-09-01/share/icons/rose-pine-moon/128x128/apps/qsynth.svg"
+                    }
+                },
+                "5": {
+                    "0": {
+                        "command": "obs",
+                        "icon": "/nix/store/08k62y0ajf9smrvf700ya1ym6ss6km8c-rose-pine-icon-theme-unstable-2022-09-01/share/icons/rose-pine-moon/128x128/apps/obs.svg"
+                    },
+                    "1": {
+                        "command": "davinci-resolve",
+                        "icon": "/nix/store/08k62y0ajf9smrvf700ya1ym6ss6km8c-rose-pine-icon-theme-unstable-2022-09-01/share/icons/rose-pine-moon/128x128/apps/davinci-resolve.svg"
+                    },
+                    "2": {},
+                    "3": {},
+                    "4": {},
+                    "5": {},
+                    "6": {},
+                    "7": {},
+                    "8": {},
+                    "9": {},
+                    "10": {
+                        "icon": "/nix/store/08k62y0ajf9smrvf700ya1ym6ss6km8c-rose-pine-icon-theme-unstable-2022-09-01/share/icons/rose-pine-moon/16x16@2x/actions/back.svg",
+                        "switch_page": 1
+                    },
+                    "11": {},
+                    "12": {},
+                    "13": {},
+                    "14": {}
+                },
+                "6": {
+                    "0": {
+                        "command": "",
+                        "icon": ""
+                    },
+                    "1": {
+                        "command": "",
+                        "icon": ""
+                    },
+                    "2": {},
+                    "3": {},
+                    "4": {},
+                    "5": {},
+                    "6": {},
+                    "7": {},
+                    "8": {},
+                    "9": {},
+                    "10": {
+                        "icon": "",
+                        "switch_page": 0
+                    },
+                    "11": {},
+                    "12": {},
+                    "13": {},
+                    "14": {}
+                },
+                "7": {
+                    "0": {},
+                    "1": {},
+                    "2": {},
+                    "3": {},
+                    "4": {},
+                    "5": {},
+                    "6": {},
+                    "7": {},
+                    "8": {},
+                    "9": {},
+                    "10": {},
+                    "11": {},
+                    "12": {},
+                    "13": {},
+                    "14": {}
+                },
+                "8": {
+                    "0": {},
+                    "1": {},
+                    "2": {},
+                    "3": {},
+                    "4": {},
+                    "5": {},
+                    "6": {},
+                    "7": {},
+                    "8": {},
+                    "9": {},
+                    "10": {},
+                    "11": {},
+                    "12": {},
+                    "13": {},
+                    "14": {}
+                },
+                "9": {
+                    "0": {},
+                    "1": {},
+                    "2": {},
+                    "3": {},
+                    "4": {},
+                    "5": {},
+                    "6": {},
+                    "7": {},
+                    "8": {},
+                    "9": {},
+                    "10": {},
+                    "11": {},
+                    "12": {},
+                    "13": {},
+                    "14": {}
+                }
+            },
+            "page": 0
+        }
+    }
+}

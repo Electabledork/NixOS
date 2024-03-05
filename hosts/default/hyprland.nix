@@ -17,11 +17,15 @@
 
   security = {
     polkit.enable = true;
-    pam.services.ags = {};
+    pam.services = {
+      ags = {};
+      paulr.enableGnomeKeyring = true;
+    };
   };
 
   services = {
-    udisks2.enable = true; 
+    udisks2.enable = true;
+    gnome.gnome-keyring.enable = true;
     xserver = {
       enable = true;
       displayManager.startx.enable = true;
