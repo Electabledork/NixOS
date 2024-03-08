@@ -1,8 +1,10 @@
+import { notificationPopup } from './notificationPopups.js';
+import { applauncher } from './applauncher.js';
+
 const hyprland = await Service.import('hyprland')
 const notifications = await Service.import('notifications')
 const mpris = await Service.import('mpris')
 const audio = await Service.import('audio')
-const battery = await Service.import('battery')
 const systemtray = await Service.import('systemtray')
 
 const date = Variable('', {
@@ -43,7 +45,6 @@ function Clock() {
         label: date.bind(),
     })
 }
-
 
 // we don't need dunst or any other notification daemon
 // because the Notifications module is a notification daemon itself
@@ -121,26 +122,6 @@ function Volume() {
 }
 
 
-function BatteryLabel() {
-    const value = battery.bind('percent').as(p => p > 0 ? p / 100 : 0)
-    const icon = battery.bind('percent').as(p =>
-        `battery-level-${Math.floor(p / 10) * 10}-symbolic`)
-
-    return Widget.Box({
-        class_name: 'battery',
-        visible: battery.bind('available'),
-        children: [
-            Widget.Icon({ icon }),
-            Widget.LevelBar({
-                widthRequest: 140,
-                vpack: 'center',
-                value,
-            }),
-        ],
-    })
-}
-
-
 function SysTray() {
     const items = systemtray.bind('items')
         .as(items => items.map(item => Widget.Button({
@@ -183,7 +164,6 @@ function Right() {
         spacing: 8,
         children: [
             Volume(),
-            BatteryLabel(),
             Clock(),
             SysTray(),
         ],
@@ -205,14 +185,24 @@ function Bar(monitor = 0) {
     })
 }
 
+Utils.timeout(100, () => Utils.notify({
+    summary: 'Notification Popup Example',
+    iconName: "info-symbolic",
+    body: 'Lorem ipsum dolor sit amet, qui minim labore adipisicing '
+        + 'minim sint cillum sint consectetur cupidatat.',
+    actions: {
+        "Cool": () => print("pressed Cool"),
+    },
+}))
+
 App.config({
     style: './style.css',
     windows: [
-        Bar(),
-
-        // you can call it, for each monitor
-        // Bar(0),
-        // Bar(1)
+         Bar(0),
+         Bar(1),
+         Bar(2),
+         notificationPopup,
+         applauncher,
     ],
 })
 
