@@ -13,6 +13,7 @@ in
     ./btop.nix
     ./nnn.nix
     ./rofi/rofi.nix
+    ./mpv.nix
   ];
 
   gtk = {
