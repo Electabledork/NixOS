@@ -17,7 +17,6 @@
     easyeffects
 
     # General Programs
-    #mpv
     youtube-music
     qview
     kitty
@@ -107,6 +106,7 @@
     # Libs / Tools
     unzip
     zip
+    unrar-wrapper
     glib
     ffmpeg
     libnotify

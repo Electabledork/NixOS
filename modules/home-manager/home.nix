@@ -14,6 +14,7 @@ in
     ./nnn.nix
     ./rofi/rofi.nix
     ./mpv.nix
+    ./cava.nix
   ];
 
   gtk = {
