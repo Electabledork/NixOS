@@ -1,5 +1,5 @@
 import { notificationPopup } from './notificationPopups.js';
-import { applauncher } from './applauncher.js';
+import { applauncher } from './appLauncher.js';
 
 const hyprland = await Service.import('hyprland')
 const notifications = await Service.import('notifications')
