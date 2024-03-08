@@ -66,6 +66,18 @@ in
     };
   };
 
+  # XDG MIME default applications
+  xdg.mimeApps = {
+    enable = true;
+    defaultApplications = {
+      "image/png" = "com.interversehq.qView.desktop";
+      "image/jpeg" = "com.interversehq.qView.desktop";
+      "image/bmp" = "com.interversehq.qView.desktop";
+      "image/webp" = "com.interversehq.qView.desktop";
+      "image/*" = "com.interversehq.qView.desktop";
+      "video/MP2T" = "mpv.desktop";
+    };
+  };
 
   programs.home-manager.enable = true;
   home.stateVersion = "23.11";

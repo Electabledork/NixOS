@@ -86,6 +86,7 @@
     ardour
     reaper
     hydrogen
+    carla
 
 
     # Image Edit
@@ -95,6 +96,7 @@
 
     # Video Edit
     davinci-resolve
+    
     
     # Office / Notes
     onlyoffice-bin
@@ -114,6 +116,7 @@
     udiskie
     neofetch
     nix-prefetch-git
+    yt-dlp
   ];
 
   programs.cava = {

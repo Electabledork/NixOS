@@ -9,8 +9,10 @@ in
     package = inputs.hyprland.packages.${pkgs.system}.hyprland;
 
     settings = {
+      "$mod" = "SUPER";
       "$terminal" = "kitty";
       "$fileManager" = "nnn";
+      "$fileManagerAlt" = "thunar";
       "$menu" = "rofi -show drun -show-icons";
       "source" = "~/.config/hypr/rose-pine-moon.conf";
 
@@ -23,47 +25,49 @@ in
 
       monitor = [
        	"DP-1, 1920x1080@75, 0x0, 1"
-	"DP-2, 1920x1080@75, -1080x-448, 1, transform, 3"
-	"HDMI-A-1, 1920x1080@60, 1920x0, 1"
+	      "DP-2, 1920x1080@75, -1080x-448, 1, transform, 3"
+	      "HDMI-A-1, 1920x1080@60, 1920x0, 1"
         ",preferred,auto,1"
       ];
 
       general = {
         layout = "dwindle";
         resize_on_border = true;
-	gaps_in = 5;
-	gaps_out = 10;
-	border_size = 2;
-	"col.active_border" = "$rose $pine $love $iris 90deg";
-	"col.inactive_border" = "$muted";
+        gaps_in = 5;
+        gaps_out = 10;
+        border_size = 2;
+        "col.active_border" = "$rose $pine $love $iris 90deg";
+        "col.inactive_border" = "$muted";
       };
 
       decoration = {
         rounding = 10;
-	blur = {
+	      
+        blur = {
           enabled = true;
-	  size = 3;
-	  passes = 1;
-	  vibrancy = 0.1696;
-	};
-	drop_shadow = "yes";
-	shadow_range = 4;
-	shadow_render_power = 3;
-	"col.shadow" = "rgba(1a1a1aee)";
+          size = 3;
+          passes = 1;
+          vibrancy = 0.1696;
+        };
+
+        drop_shadow = "yes";
+        shadow_range = 4;
+        shadow_render_power = 3;
+        "col.shadow" = "rgba(1a1a1aee)";
       };
 
       animations = {
         enabled = "yes";
-	bezier = "myBezier, 0.05, 0.9, 0.1, 1.05";
-        
-	animation = [
+        bezier = "myBezier, 0.05, 0.9, 0.1, 1.05";
+              
+        animation = [
           "windows, 1, 7, myBezier"
-	  "windowsOut, 1, 7, default, popin 80%"
-	  "border, 1, 10, default"
-	  "borderangle, 1, 8, default"
-	  "fade, 1, 7, default"
-	  "workspaces, 1, 6, default"
-	];
+          "windowsOut, 1, 7, default, popin 80%"
+          "border, 1, 10, default"
+          "borderangle, 1, 8, default"
+          "fade, 1, 7, default"
+          "workspaces, 1, 6, default"
+        ];
       };
 
       misc = {
@@ -73,14 +77,14 @@ in
 
       input = {
         kb_layout = "us";
-	follow_mouse = 1;
-	sensitivity = 0;
-	float_switch_override_focus = 2;
+        follow_mouse = 1;
+        sensitivity = 0;
+        float_switch_override_focus = 2;
       };
 
       dwindle = {
         pseudotile = "yes";
-	preserve_split = "yes";
+	      preserve_split = "yes";
       };
 
       master = {
@@ -93,7 +97,7 @@ in
 
       device = {
         name = "glorious-model-o-wireless-1";
-	sensitivity = -0.5;
+	      sensitivity = -0.5;
       };
 
       windowrulev2 = [
@@ -102,26 +106,38 @@ in
 
       windowrule = [];
 
-      "$mod" = "SUPER";
+      "workspace" = [
+        "1,monitor:DP-1"
+        "2,monitor:DP-1"
+        "3,monitor:DP-1"
+        "4,monitor:DP-1"
+        "5,monitor:DP-1"
+        "6,monitor:DP-2"
+        "7,monitor:DP-2"
+        "8,monitor:HDMI-A-1"
+        "9,monitor:HDMI-A-1"
+        "10,monitor:HDMI-A-1"
+      ];
 
       bind = [
         "$mod, T, exec, $terminal"
         "$mod, Q, killactive,"
-	    "$mod, M, exit,"
-	    "$mod, E, exec, $terminal -e $fileManager"
-	    "$mod, V, togglefloating,"
-	    "$mod, R, exec, $menu"
-	    "$mod, P, pseudo,,"
-    	"$mod, J, togglesplit, "
-    	"$mod, B, exec, firefox"
-    	"$mod, left, movefocus, l"
-    	"$mod, right, movefocus, r"
-    	"$mod, up, movefocus, u"
-    	"$mod, down, movefocus, d"	
-    	"$mod, S, togglespecialworkspace, magic"
-    	"$mod SHIFT, S, movetoworkspace, special:magicv"
-    	"$mod, mouse_down, workspace, e+1"
-    	"$mod, mouse_up, workspace, e-1"
+        "$mod, M, exit,"
+        "$mod, E, exec, $terminal -e $fileManager"
+        "$mod SHIFT, E, exec, $fileManagerAlt"
+        "$mod, V, togglefloating,"
+        "$mod, R, exec, $menu"
+        "$mod, P, pseudo,,"
+        "$mod, J, togglesplit, "
+        "$mod, B, exec, firefox"
+        "$mod, left, movefocus, l"
+        "$mod, right, movefocus, r"
+        "$mod, up, movefocus, u"
+        "$mod, down, movefocus, d"	
+        "$mod, S, togglespecialworkspace, magic"
+        "$mod SHIFT, S, movetoworkspace, special:magicv"
+        "$mod, mouse_down, workspace, e+1"
+        "$mod, mouse_up, workspace, e-1"
       ]
       ++ (
         # workspaces
