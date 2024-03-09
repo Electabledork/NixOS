@@ -23,6 +23,7 @@
   in
   {
     enable = true;
+    defaultEditor = true;
 
     viAlias = true;
     vimAlias = true;
@@ -70,6 +71,8 @@
 
       cmp_luasnip
       cmp-nvim-lsp
+      cmp-treesitter
+      cmp-path
 
       luasnip
       friendly-snippets
@@ -80,17 +83,46 @@
 
       {
         plugin = (nvim-treesitter.withPlugins (p: [
-          p.tree-sitter-nix
-          p.tree-sitter-vim
           p.tree-sitter-bash
-          p.tree-sitter-lua
-          p.tree-sitter-python
+          p.tree-sitter-c
+          p.tree-sitter-cpp
+          p.tree-sitter-c-sharp
+          p.tree-sitter-cmake
+          p.tree-sitter-css
+          p.tree-sitter-dart
+          p.tree-sitter-dockerfile
+          p.tree-sitter-glsl
+          p.tree-sitter-go
+          p.tree-sitter-java
+          p.tree-sitter-javascript
           p.tree-sitter-json
+          p.tree-sitter-kotlin
+          p.tree-sitter-lua
+          p.tree-sitter-nix
+          p.tree-sitter-python
+          p.tree-sitter-ruby
+          p.tree-sitter-rust
+          p.tree-sitter-scala
+          p.tree-sitter-sql
+          p.tree-sitter-comment
+          p.tree-sitter-toml
+          p.tree-sitter-typescript
+          p.tree-sitter-vim
+          p.tree-sitter-yaml
         ]));
         config = toLuaFile ./plugin/treesitter.lua;
       }
 
       vim-nix
+      nvim-tree-lua
+      nvim-autopairs
+      nvim-ts-autotag
+      crates-nvim
+      vim-be-good
+      indent-blankline-nvim
+      nvim-cursorline
+      which-key-nvim
+      gitsigns-nvim
     ];
 
     extraLuaConfig = ''

@@ -3,6 +3,7 @@ let
   username = "paulr";
   homeDirectory = "/home/${username}";
   homeManDir = "/home/${username}/modules/home-manager";
+  rosePineCursor = import ./rose-pine-cursor.nix { inherit pkgs; };
 in
 {
   imports = [
@@ -31,8 +32,8 @@ in
     };
 
     cursorTheme = {
-      package = pkgs.simp1e-cursors;
-      name = "Simp1e Rose Pine Moon";
+      package = rosePineCursor;
+      name = "BreezeX-RosePine-Linux";
     };
   };
 
@@ -42,8 +43,8 @@ in
   };
 
   home.pointerCursor.gtk.enable = true;
-  home.pointerCursor.package = pkgs.simp1e-cursors;
-  home.pointerCursor.name = "Simp1e Rose Pine Moon";
+  home.pointerCursor.package = rosePineCursor;
+  home.pointerCursor.name = "BreezeX-RosePine-Linux";
 
   nixpkgs.config = {
     allowUnfree = true;

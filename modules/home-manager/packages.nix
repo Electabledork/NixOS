@@ -117,6 +117,10 @@
     neofetch
     nix-prefetch-git
     yt-dlp
+    fzf
+    dust
+    bat
+    tldr
   ];
 
 }
