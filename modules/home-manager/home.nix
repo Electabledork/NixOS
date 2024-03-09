@@ -16,6 +16,7 @@ in
     ./rofi/rofi.nix
     ./mpv.nix
     ./cava.nix
+    ./starship.nix
   ];
 
   gtk = {
@@ -23,12 +24,12 @@ in
   
     theme = {
       package = pkgs.rose-pine-gtk-theme;
-      name = "rose-pine-moon";
+      name = "rose-pine";
     };
 
     iconTheme = {
       package = pkgs.rose-pine-icon-theme;
-      name = "rose-pine-moon";
+      name = "rose-pine";
     };
 
     cursorTheme = {
