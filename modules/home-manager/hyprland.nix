@@ -7,6 +7,10 @@ in
   wayland.windowManager.hyprland = {
     enable = true;
     package = inputs.hyprland.packages.${pkgs.system}.hyprland;
+    plugins = [
+      inputs.hyprland-plugins.packages.${pkgs.system}.hyprbars
+      inputs.hyprland-plugins.packages.${pkgs.system}.hyprwinwrap
+    ];
 
     settings = {
       "$mod" = "SUPER";
@@ -167,7 +171,7 @@ in
         ",XF86AudioLowerVolume,  exec, ${pactl} set-sink-volume @DEFAULT_SINK@ -5%"
       ];
 
-      bindl =  [
+      bindl = [
         ",XF86AudioPlay,    exec, ${playerctl} play-pause"
         ",XF86AudioStop,    exec, ${playerctl} pause"
         ",XF86AudioPause,   exec, ${playerctl} pause"
@@ -175,6 +179,12 @@ in
         ",XF86AudioNext,    exec, ${playerctl} next"
         ",XF86AudioMicMute, exec, ${pactl} set-source-mute @DEFAULT_SOURCE@ toggle"
       ];
+
+      plugin = {
+        hyprwinwrap = {
+          class = "kitty-bg";
+        };
+      };
     };
 
   };

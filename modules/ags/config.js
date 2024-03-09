@@ -1,5 +1,5 @@
 import { notificationPopup } from './notificationPopups.js';
-import { applauncher } from './appLauncher.js';
+import { applauncher } from './applauncher.js';
 
 const hyprland = await Service.import('hyprland')
 const notifications = await Service.import('notifications')
@@ -198,11 +198,11 @@ Utils.timeout(100, () => Utils.notify({
 App.config({
     style: './style.css',
     windows: [
-         Bar(0),
-         Bar(1),
-         Bar(2),
-         notificationPopup,
-         applauncher,
+        //Bar(0),
+        //Bar(1),
+        //Bar(2),
+        //notificationPopup,
+        applauncher,
     ],
 })
 
