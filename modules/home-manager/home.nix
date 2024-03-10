@@ -17,7 +17,6 @@ in
     ./mpv.nix
     ./cava.nix
     ./starship.nix
-    ./blender.nix
   ];
 
   gtk = {
