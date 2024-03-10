@@ -19,7 +19,7 @@
     # General Programs
     youtube-music
     qview
-    kitty
+    #kitty
     firefox
     discord
     betterdiscordctl

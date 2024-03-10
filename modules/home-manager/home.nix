@@ -17,6 +17,7 @@ in
     ./mpv.nix
     ./cava.nix
     ./starship.nix
+    ./kitty.nix
   ];
 
   gtk = {
