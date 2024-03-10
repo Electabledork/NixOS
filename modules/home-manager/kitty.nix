@@ -50,6 +50,9 @@
             # white
             color7 = "#e0def4";
             color15 = "#e0def4";
-        }
+
+            # Opacity
+            background_opacity = "0.9";
+        };
     };
 }
