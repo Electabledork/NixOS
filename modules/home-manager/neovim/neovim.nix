@@ -127,6 +127,7 @@
 
     extraLuaConfig = ''
       ${builtins.readFile ./options.lua}
+      ${builtins.readFile ./plugin/other.lua}
     '';
   };
 }

@@ -19,8 +19,8 @@
     # General Programs
     youtube-music
     qview
-    #kitty
     firefox
+    tor-browser
     discord
     betterdiscordctl
     starship
@@ -51,6 +51,7 @@
     SDL2_sound
     SDL2_mixer
     SDL2_image
+    SDL2_gfx
 
 
     # Programming
@@ -86,6 +87,7 @@
     reaper
     hydrogen
     carla
+    guitarix
 
 
     # Image Edit
@@ -121,6 +123,8 @@
     dust
     bat
     tldr
+    lua
+    jdk
   ];
 
 }

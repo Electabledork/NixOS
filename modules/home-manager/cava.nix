@@ -134,7 +134,7 @@
                 # "sdl" uses the Simple DirectMedia Layer to render in a graphical context.
                 # "sdl_glsl" uses SDL to create an OpenGL context. Write your own shaders or
                 # use one of the predefined ones.
-                ##method = noncurses;
+                ##method = "sdl";
 
                 # Orientation of the visualization. Can be "bottom", "top", "left" or "right".
                 # Default is "bottom". Other orientations are only supported on sdl and ncruses
@@ -208,7 +208,8 @@
                 # Or defined by hex code "\'#xxxxxx" (hex code must be within ""). User defined colors requires
                 # a terminal that can change color definitions such as Gnome-terminal or rxvt.
                 # default is to keep current terminal color
-                background = "\'#232136\'\'";
+                ##background = "\'#232136\'\'";
+                background_opacity = 0;
 
                 # SDL and sdl_glsl only support hex code colors, these are the default:
                 #background = "\'#111111\'";
@@ -230,7 +231,7 @@
 
             smoothing = {
                 # Disables or enables the so-called "Monstercat smoothing" with or without "waves". Set to 0 to disable.
-                #monstercat = 0;
+                # monstercat = 0;
                 ##waves = 0;
 
                 # Noise reduction, int 0 - 100. default 77
@@ -243,11 +244,11 @@
                 # This one is tricky. You can have as much keys as you want.
                 # Remember to uncomment more than one key! More keys = more precision.
                 # Look at readme.md on github for further explanations and examples.
-                ##1 = 1; # bass
-                ##2 = 1;
-                ##3 = 1; # midtone
-                ##4 = 1;
-                ##5 = 1; # treble
+                "1" = 1; # bass
+                "2" = 1;
+                "3" = 1; # midtone
+                "4" = 1;
+                "5" = 1; # treble
             };
         };
     };

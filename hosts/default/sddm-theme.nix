@@ -1,6 +1,11 @@
 { pkgs, ... }:
 let
-  image = "../../extras/static/mountain1.png";
+  imgLink = "https://raw.githubusercontent.com/Electabledork/Wallpapers/main/static/cyberpunk.png";
+
+  image = pkgs.fetchurl {
+    url = imgLink;
+    sha256 = "sha256-+2H6xuS3hZk6Lk2I9nlC9vW3sAhliQ4hqAlFvLe1hGk=";
+  };
 in
 pkgs.stdenv.mkDerivation {
   name = "rose-pine";
@@ -15,6 +20,5 @@ pkgs.stdenv.mkDerivation {
     cp -R ./* $out/
     rm $out/background.jpg
     cp -r ${image} $out/background.jpg
-    cp -r ${image} $out/background2.jpg
   '';
 }

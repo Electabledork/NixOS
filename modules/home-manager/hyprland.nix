@@ -41,6 +41,7 @@ in
         "udiskie -t --appindicator &"
         "streamdeck &"
         "qsynth &"
+        "~/nixos/extras/bgStart.sh"
       ];
 
       monitor = [

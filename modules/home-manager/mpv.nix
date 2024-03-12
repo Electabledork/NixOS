@@ -9,7 +9,7 @@
             force-window = true;
             profile = "gpu-hq";
             volume = 50;
-            volume_max = 200;
+            volume-max = 200;
             deband= "yes";
             deband-iterations = 4;
             deband-threshold = 35;

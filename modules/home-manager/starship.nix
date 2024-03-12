@@ -181,9 +181,10 @@
 
             time = {
                 disabled = false;
-                time_format = "%R"; # Hour:Minute Format
+                ##time_format = "%R"; # Hour:Minute Format
                 style = "bg:#31748f fg:#191724";
                 format = "[ ♥ $time ]($style)";
+                use_12hr = true;
             };
         };
     };

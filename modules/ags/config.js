@@ -202,7 +202,7 @@ App.config({
         //Bar(1),
         //Bar(2),
         //notificationPopup,
-        applauncher,
+        //applauncher,
     ],
 })
 
