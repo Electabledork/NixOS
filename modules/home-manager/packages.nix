@@ -20,12 +20,12 @@
     youtube-music
     qview
     firefox
-    tor-browser
+    #tor-browser
     discord
     betterdiscordctl
     starship
-    f1viewer
-    obs-studio
+    #f1viewer
+    #obs-studio
 
 
     # Art
@@ -96,7 +96,7 @@
 
 
     # Video Edit
-    davinci-resolve
+    #davinci-resolve
     
     
     # Office / Notes
